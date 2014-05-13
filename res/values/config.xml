@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="updatePath">http://localhost:8080/mobileguard/update.xml</string>
+    <string name="updateApkPath">http://localhost:8080/mobileguard/PhoneGap.pdf</string>
+</resources>
