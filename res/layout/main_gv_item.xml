@@ -6,14 +6,16 @@
 
     <ImageView
         android:id="@+id/gv_img_id"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/addressbackground" />
+        android:src="@drawable/addressbackground"
+        android:contentDescription="@string/hello_world"
+        android:layout_gravity="center_horizontal" />
 
     <TextView
         android:id="@+id/gv_txt_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_gravity="center_horizontal"/>
 
 </LinearLayout>

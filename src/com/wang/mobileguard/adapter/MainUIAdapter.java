@@ -17,8 +17,10 @@ public class MainUIAdapter extends BaseAdapter {
 		R.drawable.taskmanager,R.drawable.netmanager,R.drawable.trojan,R.drawable.sysoptimize,R.drawable.atools,R.drawable.settings};
 	
 	private LayoutInflater inflater;
+	private Context context;
 	
 	public MainUIAdapter(Context context){
+		this.context = context;
 		inflater = LayoutInflater.from(context);
 	}
 	@Override
@@ -44,7 +46,9 @@ public class MainUIAdapter extends BaseAdapter {
 		// TODO Auto-generated method stub
 		View view = inflater.inflate(R.layout.main_gv_item, null);
 		ImageView imageView = (ImageView)view.findViewById(R.id.gv_img_id);
-		imageView.setBackgroundResource(ICONS[position]);
+		imageView.setImageResource(ICONS[position]);
+//		imageView.setBackground(context.getResources().getDrawable(ICONS[position]));
+//		imageView.setAlpha(0.5f);
 		TextView txtView = (TextView)view.findViewById(R.id.gv_txt_id);
 		txtView.setText(NAMES[position]);
 		return view;
