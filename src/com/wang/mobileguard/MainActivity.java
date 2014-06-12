@@ -3,6 +3,7 @@ package com.wang.mobileguard;
 import com.wang.mobileguard.adapter.MainUIAdapter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -27,10 +28,12 @@ public class MainActivity extends Activity implements OnItemClickListener{
 	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position,
 			long id) {
+		Intent intent = null;
 		switch(position){
 			case 0:
 				//手机防盗
-				System.out.println(position);
+				intent = new Intent(this,SecurityActivity.class);
+				startActivity(intent);
 				break;
 			case 1:
 				//通讯卫士
@@ -52,6 +55,8 @@ public class MainActivity extends Activity implements OnItemClickListener{
 				break;
 			case 7:
 				//常用工具
+				intent = new Intent(this,InterceptorActivity.class);
+				startActivity(intent);
 				break;
 			case 8:
 				//设置中心

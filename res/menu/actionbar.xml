@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:id="@+id/backid"
+            android:title="返回"
+            android:showAsAction="ifRoom"
+            android:actionViewClass="android.widget.Button" />
+        <item android:id="@+id/titleid"
+            android:title="手机防盗"
+            android:showAsAction="ifRoom"
+            android:actionViewClass="android.weight.TextView"/>
+        <item android:id="@+id/settingid"
+            android:title="设置"
+            android:showAsAction="ifRoom"
+            android:actionViewClass="android.widget.Button" />
+    </menu>
